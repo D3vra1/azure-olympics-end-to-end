@@ -13,15 +13,6 @@ Bronze → Spark in Databricks
 Curated data → Synapse Analytics
 Visualize via Power BI or Synapse SQL
 
-yaml
-Copy code
-
-** [Insert Architecture Diagram Below]**
-
-![Pipeline Arch](docs/architecture.png)
-
-*(Create and upload an architecture diagram to `docs/architecture.png` for visual clarity.)*
-
 ---
 
 ## Tech Stack
@@ -30,6 +21,11 @@ Copy code
 - **Azure Databricks + PySpark** – Data transformation  
 - **Azure Synapse Analytics** – Querying and analysis  
 - **Optional**: Power BI or Synapse SQL for visualization  
+
+---
+
+### Architecture Diagram
+![Azure Olympics Pipeline](docs/Tokyo-Olympics-Architecture.jpg)
 
 ---
 
