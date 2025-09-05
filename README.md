@@ -1,20 +1,70 @@
-# Azure Data Engineering Project: Olympics Dataset
+# Azure Olympics Data Engineering Pipeline
 
-## 📖 Project Overview
-This project demonstrates a modern **end-to-end data engineering pipeline** built on Microsoft Azure.  
-The goal is to process and analyze the Olympics dataset using **ADF, Databricks, PySpark, SQL, and Synapse Analytics**, showcasing both data engineering and analytics skills.
+An end-to-end data engineering pipeline using the Tokyo Olympics dataset on Azure — built with ADF, Databricks (PySpark), SQL, and Synapse Analytics.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
-The pipeline follows these stages:
+**Workflow Overview**:
+Raw CSVs (ADLS Gen2)
+↓ ADF orchestrates
+Bronze → Spark in Databricks
+Curated data → Synapse Analytics
+Visualize via Power BI or Synapse SQL
 
-1. **Raw Data Storage** → Data is ingested into **Azure Data Lake Storage (ADLS Gen2)**.
-2. **Data Ingestion (ADF)** → Azure Data Factory pipelines orchestrate the movement of raw data into the bronze zone.
-3. **Data Transformation (Databricks + PySpark)** → Data is cleaned, transformed, and written to curated layers.
-4. **SQL Analytics (Synapse)** → Processed data is stored and queried in Synapse Analytics.
-5. **Visualization (BI Tool)** → Data is available for dashboarding (Power BI / Synapse Serverless).
+yaml
+Copy code
 
-📌 Here’s the architecture flow:
-<img width="1366" height="665" alt="image" src="https://github.com/user-attachments/assets/e42f2bf1-270f-414a-ada0-9a1a59889dd8" />
+** [Insert Architecture Diagram Below]**
+
+![Pipeline Arch](docs/architecture.png)
+
+*(Create and upload an architecture diagram to `docs/architecture.png` for visual clarity.)*
+
+---
+
+## Tech Stack
+- **Azure Data Lake Storage (Gen2)** – Data storage (raw & transformed zones)  
+- **Azure Data Factory (ADF)** – Pipeline orchestration  
+- **Azure Databricks + PySpark** – Data transformation  
+- **Azure Synapse Analytics** – Querying and analysis  
+- **Optional**: Power BI or Synapse SQL for visualization  
+
+---
+
+## Repo Contents
+
+- `notebooks/` – Databricks notebooks (PySpark logic)  
+- `sql/` – Synapse SQL scripts  
+- `adf/` – Azure Data Factory JSON/ARM exports  
+- `docs/` – Architecture diagram and relevant screenshots  
+- `README.md` – Explanation + how-to-run
+
+---
+
+## Highlights & Learnings
+- Built read/write pipeline for raw & curated Olympic data  
+- Mounted ADLS Gen2 securely using OAuth via Databricks secrets  
+- Crafted PySpark jobs for data aggregation  
+- Modeled and queried in Synapse for analytics  
+- Optional: built dashboards to visualize medal stats and participation patterns  
+
+---
+
+## Getting Started
+
+1. Clone this repo.  
+2. Upload your CSVs to ADLS `raw-data`.  
+3. Import ADF pipelines from `adf/` and update linked services.  
+4. Launch Databricks, mount storage, and run notebooks.  
+5. Load transformed results into Synapse using the SQL scripts.  
+6. Analyze data or connect with Power BI for visualization.
+
+---
+
+## About the Author
+
+**Dev Raj Singh Sukhai**  
+Aspiring Azure Data Engineer.  
+Check out my [LinkedIn](https://www.linkedin.com/in/devrajsingh-sukhai-670430249/) for the full story.
