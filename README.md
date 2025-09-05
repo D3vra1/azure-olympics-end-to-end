@@ -6,7 +6,8 @@ An end-to-end pipeline on the Tokyo Olympics dataset using **Azure Data Lake (Ge
 
 ```mermaid
 flowchart LR
-    A [Raw Data (CSV/Parquet)] --> B[Azure Data Factory]
-    B --> C[Azure Databricks (PySpark)]
-    C --> D[Azure Synapse Analytics (SQL)]
-    D --> E[Power BI Dashboard]
+A[Raw Data (CSV/Parquet)] -->B[Azure Data Factory]
+B --> C[Azure Databricks (PySpark)]
+C --> D[Azure Synapse Analytics (SQL)]
+D --> E[Power BI Dashboard]
+```
