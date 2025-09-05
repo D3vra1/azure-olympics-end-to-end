@@ -25,7 +25,7 @@ Visualize via Power BI or Synapse SQL
 ---
 
 ### Architecture Diagram
-![Azure Olympics Pipeline](docs/Tokyo-Olympics-Architecture.jpg)
+![Azure Olympics Pipeline]![Tokyo Olympics Data Architecture](https://github.com/user-attachments/assets/f18431c1-7dbd-4be1-8b2f-7487ea30ab5e)
 
 ---
 
