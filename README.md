@@ -9,5 +9,4 @@ flowchart LR
     A[Raw Data (CSV/Parquet)] --> B[Azure Data Factory]
     B --> C[Azure Databricks (PySpark)]
     C --> D[Azure Synapse Analytics (SQL)]
-    D --> E[Power BI Dashboard] 
-```
+    D --> E[Power BI Dashboard]
