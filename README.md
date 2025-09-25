@@ -48,17 +48,6 @@ Visualize via Power BI or Synapse SQL
 
 ---
 
-## Getting Started
-
-1. Clone this repo.  
-2. Upload your CSVs to ADLS `raw-data`.  
-3. Import ADF pipelines from `adf/` and update linked services.  
-4. Launch Databricks, mount storage, and run notebooks.  
-5. Load transformed results into Synapse using the SQL scripts.  
-6. Analyze data or connect with Power BI for visualization.
-
----
-
 ## About the Author
 
 **Dev Raj Singh Sukhai**  
